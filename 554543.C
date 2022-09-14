@@ -1,4 +1,4 @@
-//permaid
+//pyramid
 //5	54	543....
 void main()
 {
