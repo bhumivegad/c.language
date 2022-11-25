@@ -1,31 +1,30 @@
-
-#include<stdio.h>
-void main ()
+#include<math.h>
+void main()
 {
-    int n,a,b=0,x;
+	int n,m,p,s=1,c=2;
+	clrscr();
+	printf("enter n");
+	scanf("%d",&n);
+	m=n;
+	while(n>0)
+	{
+	  c++;
+	  n=n/10;
 
-    printf("enter n");
-    scanf("%d",&n);
-    x=n;
-    while(n>0)
-      {
-        a=n%10;
-        b=b+a*a*a;
-        n=n/10;
-      }
-        if(b==x)
-        {
-          printf("Armstrong no");
-        }
-        else
-        {
-           printf("not no.");
-        }
-        
-     getchar();
-    
-    
-    
- }
 
+	}
+	s=m*m;
+	p=pow(10,c);
+	n=s%p;
+	if(m=n)
+		printf("\n %d is murphy",m);
+	  else
+		printf("\n %d is not murphy",n);
+
+
+
+getch();
+}
+
+    
     
